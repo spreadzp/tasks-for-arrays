@@ -1,3 +1,8 @@
+const solution = (str: string, ending: string): boolean => {
+  const len = [...str].length;
+  return [...str].slice(len - [...ending].length).join("") === ending;
+};
+
 function sumNumbers(test: string): number {
   let sum = 0;
   test
